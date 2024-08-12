@@ -1,20 +1,17 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import Bar from "../components/Bar.astro"
+const { pageTitle } = Astro.props;
 ---
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
+		<title>{pageTitle}</title>
+	  </head>
 	<body>
+		<Bar pageTitle={pageTitle}/>
 		<slot />
 	</body>
 </html>

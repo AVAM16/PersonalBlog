@@ -1,4 +1,6 @@
 ---
+import ThemeSwitch from "./ThemeSwitch.astro"
+const { pageTitle } = Astro.props;
 ---
 <div class="navbar bg-base-100">
   <div class="navbar-start">
@@ -20,18 +22,22 @@
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
-        <li><a>Item 3</a></li>
+        <li><a href="/experience">My experience</a></li>
+        <li><a href="/projects">Personal Projects</a></li>
+        <li><a href="/thenews">News</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">AVAM</a>
+    <a class="btn btn-ghost text-xl" href="/">My Personal Website</a>
+    <a class="prose prose-base ml-2">{pageTitle}</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
-      <li><a>Item 3</a></li>
+      <li><a href="/experience">My experience</a></li>
+      <li><a href="/projects">Personal Projects</a></li>
+      <li><a href="/thenews">News</a></li>
     </ul>
+  </div>
+  <div class="navbar-end">
+    <ThemeSwitch />
   </div>
 </div>
