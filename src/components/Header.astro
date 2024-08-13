@@ -1,0 +1,17 @@
+---
+import '@/styles/globals.css'
+import { ModeToggle } from '@/components/ModeToggle';
+import Nav from './Nav';
+import MobileNav from './MobileNav';
+const pageTitle = Astro.props;
+---
+<header class="w-full border-b">
+  <div class="flex h-14 items-center justify-between px-4">
+    <div class="flex-1 flex justify-center">
+      <Nav />
+    </div>
+    <div class="flex-1 flex justify-end">
+      <ModeToggle client:load />
+    </div>
+  </div>
+</header>
