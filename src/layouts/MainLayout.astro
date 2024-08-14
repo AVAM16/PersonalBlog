@@ -1,7 +1,7 @@
 ---
 import '@/styles/globals.css'
 import Header from '@/components/Header.astro';
-import { ModeToggle } from '@/components/ModeToggle';
+import Footer from '@/components/Footer.astro';
 const { pageTitle } = Astro.props;
 ---
 
@@ -35,5 +35,6 @@ const { pageTitle } = Astro.props;
 	<body>
 		<Header pageTitle={pageTitle}/>
 		<slot />
+		<Footer />
 	</body>
 </html>
