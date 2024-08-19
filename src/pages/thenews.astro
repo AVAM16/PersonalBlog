@@ -1,10 +1,16 @@
 ---
 import '@/styles/globals.css'
 import MainLayout from '../layouts/MainLayout.astro';
+import NewsCard from '../components/NewsCard';
+const allNews = await Astro.glob("./news/*.md");
 const pageTitle = "The News";
 ---
 <MainLayout pageTitle={pageTitle}>
-	<main>
-	</main>
+	<h1>Recent Posts</h1>
+	<ul>
+		{allNews.map((news) => (
+			<NewsCard url={news.url ?? '#'} title={news.frontmatter.title} />
+		))}
+	</ul>
 </MainLayout>
 
