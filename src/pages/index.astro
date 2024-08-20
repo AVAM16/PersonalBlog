@@ -1,9 +1,23 @@
 ---
-import '@/styles/globals.css'
-import MainLayout from '../layouts/MainLayout.astro';
+import "@/styles/globals.css";
+import MainLayout from "../layouts/MainLayout.astro";
 const pageTitle = "Home";
 ---
-<MainLayout pageTitle={pageTitle}>
-	
-</MainLayout>
 
+<MainLayout pageTitle={pageTitle}>
+  <main>
+    <h1
+      class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8"
+    >
+      Welcome to my blog/website
+    </h1>
+    <p class="text-left text-lg p-5">
+      My name is <span class="text-blue-600">Artur Martins</span> and I have just
+      finished my Degree in Computer Science and Engineering at
+      <a href="https://tecnico.ulisboa.pt/en/" class="text-blue-300">@IST</a>.
+      Now I am starting my Master's at the same University. Even tough I do not
+      consider myself a front-end developer, I realized the importance of having
+      a personal website and took my holidays to build this one.
+    </p>
+  </main>
+</MainLayout>

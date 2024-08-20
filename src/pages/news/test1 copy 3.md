@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/NewsLayout.astro
-title: 'Test'
-pubDate: 2024-08-01
+title: 'Test3'
+pubDate: 2024-08-03
 description: 'Test'
 ---
 

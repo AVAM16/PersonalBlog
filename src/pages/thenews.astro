@@ -1,16 +1,35 @@
 ---
-import '@/styles/globals.css'
-import MainLayout from '../layouts/MainLayout.astro';
-import NewsCard from '../components/NewsCard';
+import "@/styles/globals.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import NewsCard from "../components/NewsCard";
 const allNews = await Astro.glob("./news/*.md");
+allNews.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
 const pageTitle = "The News";
 ---
-<MainLayout pageTitle={pageTitle}>
-	<h1>Recent Posts</h1>
-	<ul>
-		{allNews.map((news) => (
-			<NewsCard url={news.url ?? '#'} title={news.frontmatter.title} />
-		))}
-	</ul>
-</MainLayout>
 
+<MainLayout pageTitle={pageTitle}>
+  <main>
+    <h1
+      class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8"
+    >
+      Recent Posts
+    </h1>
+    <ul
+      class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
+    >
+      {
+        allNews.map((news) => (
+          <NewsCard
+            url={news.url ?? "/404"}
+            title={news.frontmatter.title}
+            description={news.frontmatter.description}
+            date={news.frontmatter.pubDate}
+          />
+        ))
+      }
+    </ul>
+  </main>
+</MainLayout>
