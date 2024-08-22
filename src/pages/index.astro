@@ -1,6 +1,7 @@
 ---
 import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
+import { GitCard, LinkedInCard } from "../components/SocialCards";
 const pageTitle = "Home";
 ---
 
@@ -9,15 +10,28 @@ const pageTitle = "Home";
     <h1
       class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8"
     >
-      Welcome to my blog/website
+      Welcome to my website
     </h1>
     <p class="text-left text-lg p-5">
       My name is <span class="text-blue-600">Artur Martins</span> and I have just
       finished my Degree in Computer Science and Engineering at
-      <a href="https://tecnico.ulisboa.pt/en/" class="text-blue-300">@IST</a>.
-      Now I am starting my Master's at the same University. Even tough I do not
-      consider myself a front-end developer, I realized the importance of having
-      a personal website and took my holidays to build this one.
+      <a
+        href="https://tecnico.ulisboa.pt/en/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-300">@IST</a
+      >. Now I am starting my Master's at the same University. Even tough I do
+      not consider myself a front-end developer, I realized the importance of
+      having a personal website and took my holidays to build this one.
     </p>
+    <h2
+      class="text-center scroll-m-20 text-2xl tracking-tight md:text-4xl mb-4 mt-8"
+    >
+      My socials (just these two, do not need much more)
+    </h2>
+    <div class="flex justify-center space-x-8">
+      <GitCard client:load />
+      <LinkedInCard client:load />
+    </div>
   </main>
 </MainLayout>
