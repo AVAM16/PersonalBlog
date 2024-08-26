@@ -8,7 +8,7 @@ const pageTitle = "Home";
 <MainLayout pageTitle={pageTitle}>
   <main>
     <h1
-      class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8"
+      class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8 mt-1"
     >
       Welcome to my website
     </h1>
@@ -24,14 +24,20 @@ const pageTitle = "Home";
       not consider myself a front-end developer, I realized the importance of
       having a personal website and took my holidays to build this one.
     </p>
+    <p class="text-left text-lg p-5">
+      My curriculum will mostly be on LinkedIn and my projects on GitHub. The
+      main goal of this website is to publish some news about the world of
+      technology and my personal life. Hope to expand this website in the
+      future.
+    </p>
     <h2
-      class="text-center scroll-m-20 text-2xl tracking-tight md:text-4xl mb-4 mt-8"
+      class="text-center scroll-m-20 text-2xl tracking-tight md:text-3xl mb-4 mt-8 px-2"
     >
       My socials (just these two, do not need much more)
     </h2>
-    <div class="flex justify-center space-x-8">
-      <GitCard client:load />
-      <LinkedInCard client:load />
+    <div class="flex justify-center">
+      <GitCard client:visible />
+      <LinkedInCard client:visible />
     </div>
   </main>
 </MainLayout>

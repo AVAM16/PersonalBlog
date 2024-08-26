@@ -1,9 +1,74 @@
 ---
-import '@/styles/globals.css'
-import MainLayout from '../layouts/MainLayout.astro';
+import "@/styles/globals.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Timeline from "../components/Timeline.astro";
+import { LinkedInCard } from "../components/SocialCards";
 const pageTitle = "Experience";
 ---
-<MainLayout pageTitle={pageTitle}>
-	
-</MainLayout>
 
+<MainLayout pageTitle={pageTitle}>
+  <h1
+    class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-8 mt-1"
+  >
+    What I have been doing
+  </h1>
+
+  <div class="mt-10 grid lg:grid-cols-2 gap-4">
+    <div>  
+      <Timeline
+        date="Aug, 2024"
+        link="https://fenix.tecnico.ulisboa.pt/cursos/meic-a"
+        title="Officialy started my Master's"
+        description="Master's information available here"
+      />
+      <Timeline
+        title="Concluded the Foundational C# with Microsoft course"
+        description="My fourth course on FreeCodeCamp"
+      />
+      <Timeline
+        date="Jul, 2024"
+        link="https://sectt.github.io/"
+        title="Did the STT Bootcamp at IST"
+        description="Learned about the basics of Cybersecurity and exploits"
+      />
+      <Timeline
+        date="May, 2024"
+        link="https://fenix.tecnico.ulisboa.pt/cursos/leic-t"
+        title="Successfully Finished my Degree"
+        description="Degree information available here"
+      />
+      <Timeline
+        title="Received a Diploma of Academic Merit"
+        description="For the 2nd year of my Degree"
+      />
+      <Timeline
+        date="Sep, 2023"
+        title="Completed my first Summer Internship"
+        description="1 complete month at Thales Portugal"
+      />
+      <Timeline
+        date="Sep, 2021"
+        link="https://fenix.tecnico.ulisboa.pt/cursos/leic-t"
+        title="Started my Degree in Computer Science and Engineering"
+        description="Degree information available here"
+      />
+      <Timeline
+        date="Dec, 2020"
+        title="Received the Cambridge English C2 Proficiency Certificate"
+        description="I can properly communicate in English"
+      />
+    </div>
+
+    <div class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center mx-auto my-auto">
+      <h2 class="text-2xl mb-4">All this and much more on my LinkedIn</h2>
+      <LinkedInCard client:visible />
+    </div>
+
+  </div>
+
+  <div class="lg:hidden mt-4 flex flex-col items-center">
+    <h2 class="text-2xl mb-4">All this and much more on my LinkedIn</h2>
+    <LinkedInCard client:visible />
+  </div>
+
+</MainLayout>
