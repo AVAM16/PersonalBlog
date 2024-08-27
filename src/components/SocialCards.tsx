@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import { Linkedin } from "lucide-react";
 import { useEffect, useRef } from "react";
