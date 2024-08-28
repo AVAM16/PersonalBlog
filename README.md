@@ -1,20 +1,28 @@
-# Astro Starter Kit: Basics
+# My Personal Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is my personal website, built using Astro. It is a work in progress.
+Used Tailwwind CSS for styling with the typography plugin to properly format markdown text.
+Used React with Shadcn/ui for components.
+Used Preline UI for the timeline component.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This website is designed to be fast and lightweight, with a focus on performance and accessibility.
+React is used only for certain components.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[Astro](https://astro.build)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+[TailwindCSS](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
+
+[React](https://docs.astro.build/en/guides/integrations-guide/react/)
+
+[Shadcn/ui](https://ui.shadcn.com/docs/installation/astro)
+
+[Tailwind Typography](https://docs.astro.build/en/recipes/tailwind-rendered-markdown/)
+
+[Preline UI](https://www.preline.co/)
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of this Astro project, you'll see the following folders and files:
 
 ```text
 /
@@ -22,12 +30,23 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── ui/ (Shadcn/ui components)
+│   │   └── Footer.astro
+│   │   └── Header.astro
+│   │   └── Timeline.astro
+│   │   └── Tsx Components (React components)
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── MainLayout.astro
+│   │   └── NewsLayout.astro
 │   └── pages/
+│       └── news/ (News pages)
 │       └── index.astro
-└── package.json
+│       └── experience.astro
+│       └── projects.astro
+│       └── thenews.astro
+│       └── styles/ (Tailwind CSS)
+├── package.json
+└── other configuration files
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.

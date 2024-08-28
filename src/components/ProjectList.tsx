@@ -32,7 +32,7 @@ export default function ProjectList() {
             with a toggable dark mode. Many React components are even loaded as
             HTML!!!
           </div>
-          <Separator className="my-4 h-0.5" />
+          <Separator className="my-4 h-0.5 bg-blue-200" />
           <div className="text-5xl text-center space-x-6">
             <i className="devicon-typescript-plain colored"></i>
             <i className="devicon-astro-plain colored"></i>
@@ -76,7 +76,7 @@ export default function ProjectList() {
               </Button>
             </a>
           </div>
-          <Separator className="mt-4 mb-2 h-0.5" />
+          <Separator className="mt-4 mb-2 h-0.5 bg-blue-200" />
           <div className="text-5xl text-center space-x-6 space-y-2 flex flex-wrap justify-center">
             <i className="devicon-javascript-plain colored mt-2"></i>
             <i className="devicon-c-plain colored"></i>
@@ -129,7 +129,7 @@ export default function ProjectList() {
               </Button>
             </a>
           </div>
-          <Separator className="my-4 h-0.5" />
+          <Separator className="my-4 h-0.5 bg-blue-200" />
           <div className="text-5xl text-center space-x-6">
             <i className="devicon-embeddedc-plain"></i>
             <i className="devicon-python-plain colored"></i>
