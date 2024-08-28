@@ -11,9 +11,23 @@ const { pageTitle } = Astro.props;
   <div class="flex h-14 items-center justify-between px-4">
     <div class="flex-1 flex justify-start items-center space-x-4">
       <MobileNav pageTitle={pageTitle} client:load />
-      <Button variant="secondary" className="text-xl py-6 px-5">
-        <a href="/">My Blog</a>
-      </Button>
+      <a href="/">
+        <Button variant="secondary" className="text-2xl py-6 px-5 w-32">
+          <svg width="32" height="32" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+            <rect width="40.8181" height="270.303" rx="20.409" transform="matrix(0.999998 -0.00187315 0.000672698 1 263.402 229.287)"/>
+            <rect width="40.5556" height="211.298" rx="20.2778" transform="matrix(0.87163 -0.490164 0.508795 0.860887 256 241.879)"/>
+            <rect width="40.5556" height="211.565" rx="20.2778" transform="matrix(0.87163 0.490164 -0.511005 0.859578 451.236 222)"/>
+            <rect width="40.8181" height="270.303" rx="20.409" transform="matrix(0.999998 -0.00187622 0.000671599 1 438.307 229.287)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(0.939471 0.342629 -0.341412 0.939914 122.743 0)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(0.939471 -0.342629 0.341412 0.939914 108.75 14.0083)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(0.939471 0.342629 -0.341412 0.939914 122.743 228)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(0.939471 -0.342629 0.341412 0.939914 108.751 242.008)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(-0.939471 -0.342629 0.341412 -0.939914 382.804 277.59)"/>
+            <rect width="40.8849" height="280.432" rx="20.4425" transform="matrix(-0.939471 0.342629 -0.341412 -0.939914 396.796 263.582)"/>
+          </svg>       
+          <span class="ml-2">Site</span>
+        </Button>
+      </a>
       <Nav pageTitle={pageTitle} />
     </div>
     <div class="flex-1 flex justify-end">

@@ -1,14 +1,25 @@
 ---
-import '@/styles/globals.css'
-import MainLayout from '../layouts/MainLayout.astro';
-import ProjectList from '../components/ProjectList';
+import "@/styles/globals.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import ProjectList from "../components/ProjectList";
 const pageTitle = "My Projects";
 ---
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-<MainLayout pageTitle={pageTitle}>
-	<h1 class="text-center scroll-m-20 text-3xl tracking-tight sm:text-4xl mb-8 mt-1">
-        Here are some of projects I have been working on
-    </h1>
-    <ProjectList client:load/>
-</MainLayout>
 
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
+<MainLayout pageTitle={pageTitle}>
+  <h1
+    class="text-center scroll-m-20 text-3xl tracking-tight sm:text-4xl mb-8 mt-1 mx-2"
+  >
+    Here are some of projects I have been working on
+  </h1>
+  <ProjectList client:load />
+  <h2
+    class="text-center scroll-m-20 text-2xl tracking-tight sm:text-3xl mb-8 mt-4"
+  >
+    More hopefully coming soon!
+  </h2>
+</MainLayout>

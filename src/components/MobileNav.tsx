@@ -25,7 +25,7 @@ export default function MobileNav({ pageTitle }: NavProps) {
             onClick={() => {
               setOpen(false);
             }}
-            className={`${pageTitle === "Experience" ? "text-blue-500" : ""}`}
+            className={`${pageTitle === "Experience" ? "text-blue-500" : ""} text-lg`}
           >
             <a href="/experience">Experience</a>
           </Button>
@@ -35,7 +35,7 @@ export default function MobileNav({ pageTitle }: NavProps) {
             onClick={() => {
               setOpen(false);
             }}
-            className={`${pageTitle === "My Projects" ? "text-blue-500" : ""}`}
+            className={`${pageTitle === "My Projects" ? "text-blue-500" : ""} text-lg`}
           >
             <a href="/projects">Projects</a>
           </Button>
@@ -45,7 +45,7 @@ export default function MobileNav({ pageTitle }: NavProps) {
             onClick={() => {
               setOpen(false);
             }}
-            className={`${pageTitle === "The News" ? "text-blue-500" : ""}`}
+            className={`${pageTitle === "The News" ? "text-blue-500" : ""} text-lg`}
           >
             <a href="/thenews">News</a>
           </Button>
