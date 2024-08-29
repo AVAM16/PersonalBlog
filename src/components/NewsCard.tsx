@@ -27,7 +27,7 @@ export default function NewsCard({ url, title, description, date }: cardProps) {
           <CardTitle>{title}</CardTitle>
           <CardDescription>{formattedDate}</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="pb-0">
           <CardFooter>{description}</CardFooter>
         </CardContent>
       </Card>

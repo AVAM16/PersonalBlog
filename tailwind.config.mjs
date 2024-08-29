@@ -24,17 +24,8 @@ export default {
               padding: '0.2em 0.4em',
               borderRadius: '0.25rem',
             },
-          },
-        },
-        dark: {
-          css: {
-            color: theme('colors.gray.300'),
-            'h1, h2, h3, h4, h5, h6': {
-              color: theme('colors.gray.100'),
-            },
-            code: {
-              backgroundColor: theme('colors.gray.800'),
-              color: theme('colors.gray.100'),
+            blockquote: {
+              quotes: 'none',
             },
           },
         },

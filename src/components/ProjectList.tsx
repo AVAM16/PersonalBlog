@@ -77,8 +77,8 @@ export default function ProjectList() {
             </a>
           </div>
           <Separator className="mt-4 mb-2 h-0.5 bg-blue-200" />
-          <div className="text-5xl text-center space-x-6 space-y-2 flex flex-wrap justify-center">
-            <i className="devicon-javascript-plain colored mt-2"></i>
+          <div className="text-5xl flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mb-4">
+            <i className="devicon-javascript-plain colored"></i>
             <i className="devicon-c-plain colored"></i>
             <i className="devicon-cplusplus-plain colored"></i>
             <i className="devicon-java-plain colored"></i>
