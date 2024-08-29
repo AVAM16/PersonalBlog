@@ -12,5 +12,4 @@ export default defineConfig({
     react()
   ],
   site: 'https://AVAM16.github.io',
-  base: 'PersonalBlog',
 });
