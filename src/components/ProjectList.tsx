@@ -15,7 +15,7 @@ export default function ProjectList() {
       className="w-full px-7 text-lg sm:text-2xl"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           This very own website
           <p className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400 m ml-auto mr-[12px] pl-2">
             Aug 2024
@@ -96,7 +96,7 @@ export default function ProjectList() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           ESP32-RaspberryPi
           <p className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400 m ml-auto mr-[12px] pl-2">
             Aug 2023
