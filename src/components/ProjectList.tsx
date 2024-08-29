@@ -42,7 +42,7 @@ export default function ProjectList() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Archive of my LEIC-T projects
           <p className="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400 ml-auto mr-[12px] pl-2">
             Sep 2021 - Jun 2024
