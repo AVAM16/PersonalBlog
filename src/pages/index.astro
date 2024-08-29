@@ -2,9 +2,30 @@
 import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import { GitCard, LinkedInCard } from "../components/SocialCards";
+import { Separator } from "../components/ui/separator";
 const pageTitle = "Home";
+function calculateAge(birthDate: string): number {
+  const today = new Date();
+  const birthDateObj = new Date(birthDate);
+  let age = today.getFullYear() - birthDateObj.getFullYear();
+  const monthDiff = today.getMonth() - birthDateObj.getMonth();
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < birthDateObj.getDate())
+  ) {
+    age--;
+  }
+  return age;
+}
+
+const age = calculateAge("2003-06-16");
 ---
 
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
 <MainLayout pageTitle={pageTitle}>
   <main>
     <h1
@@ -31,7 +52,80 @@ const pageTitle = "Home";
       future.
     </p>
     <h2
-      class="text-center scroll-m-20 text-2xl tracking-tight md:text-3xl mb-4 mt-8 px-2"
+      class="text-center scroll-m-20 text-3xl tracking-tight md:text-4xl mt-4"
+    >
+      A little bit about me
+    </h2>
+    <p class="text-lg p-5">
+      I am from Portugal and I am {age} years old. I am passionate about technology,
+      motorsports and love being active. I am a federated athelete in sports shooting.
+      My favourite sport is Rally and I watch WRC all the time. I also love riding
+      motorcycles, mainly offroad. I am a big open-source advocate and Linux user.
+      My favourite programming language is undoubtedly C. My dad learned it at
+      <a
+        href="https://tecnico.ulisboa.pt/en/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-300">@IST</a
+      >
+      and so did I. I also like C++ and Python. At this moment I am learning Rust
+      and I find it quite interesting. I have a C2 level in English.
+    </p>
+    <h2
+      class="text-center scroll-m-20 text-3xl tracking-tight md:text-4xl my-4"
+    >
+      Mastered Technologies
+    </h2>
+    <div
+      class="text-5xl text-center space-x-6 space-y-2 flex flex-wrap justify-center mb-4"
+    >
+      <i class="devicon-c-plain colored mt-2"></i>
+      <i class="devicon-cplusplus-plain colored"></i>
+      <i class="devicon-python-plain colored"></i>
+      <i class="devicon-linux-plain"></i>
+      <i class="devicon-postgresql-plain colored"></i>
+      <i class="devicon-java-plain colored"></i>
+      <i class="devicon-git-plain colored"></i>
+    </div>
+    <div class="px-4 md:px-8">
+      <Separator className="my-4 mx-auto w-full max-w-screen-lg"/>
+    </div>
+    <h2
+      class="text-center scroll-m-20 text-3xl tracking-tight md:text-4xl my-4"
+    >
+      Technologies I have some experience with
+    </h2>
+    <div
+      class="text-5xl text-center space-x-6 space-y-2 flex flex-wrap justify-center mb-4"
+    >
+      <i class="devicon-html5-plain colored mt-2"></i>
+      <i class="devicon-css3-plain colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-typescript-plain colored"></i>
+      <i class="devicon-react-original colored"></i>
+      <i class="devicon-csharp-plain colored"></i>
+    </div>
+    <div class="px-4 md:px-8">
+      <Separator className="my-4 mx-auto w-full max-w-screen-lg"/>
+    </div>
+    <h2
+      class="text-center scroll-m-20 text-3xl tracking-tight md:text-4xl my-4"
+    >
+      Technologies I am currently learning
+    </h2>
+    <div
+      class="text-5xl text-center space-x-6 space-y-2 flex flex-wrap justify-center mb-4"
+    >
+      <i class="devicon-rust-plain mt-2"></i>
+      <i class="devicon-docker-plain colored"></i>
+      <i class="devicon-nodejs-plain-wordmark colored"></i>
+      <i class="devicon-go-plain colored"></i>
+    </div>
+    <div class="px-4 md:px-8">
+      <Separator className="my-4 mx-auto w-full max-w-screen-lg"/>
+    </div>
+    <h2
+      class="text-center scroll-m-20 text-2xl tracking-tight md:text-3xl mb-4 mt-12 px-2"
     >
       My socials (just these two, do not need much more)
     </h2>

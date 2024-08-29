@@ -88,6 +88,10 @@ export default function ProjectList() {
             <i className="devicon-groovy-plain colored"></i>
             <i className="devicon-jupyter-plain colored"></i>
             <i className="devicon-prolog-plain colored"></i>
+            <i className="devicon-git-plain colored"></i>
+            <i className="devicon-spring-original colored"></i>
+            <i className="devicon-vuejs-plain colored"></i>
+            <i className="devicon-threejs-original"></i>
           </div>
         </AccordionContent>
       </AccordionItem>
