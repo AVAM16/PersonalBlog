@@ -22,7 +22,7 @@ export default function NewsCard({ url, title, description, date }: cardProps) {
   });
   return (
     <a href={url} className="px-2">
-      <Card className="w-full dark:hover:bg-slate-800 hover:bg-slate-100">
+      <Card className="w-full min-h-44 max-w-[332px] dark:hover:bg-slate-800 hover:bg-slate-100">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{formattedDate}</CardDescription>
