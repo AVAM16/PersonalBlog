@@ -8,9 +8,10 @@ allNews.sort(
     Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
 );
 const pageTitle = "The News";
+const description = "The latest news about technology and my personal life";
 ---
 
-<MainLayout pageTitle={pageTitle}>
+<MainLayout pageTitle={pageTitle} description={description}>
   <main>
     <h1
       class="text-center scroll-m-20 text-4xl tracking-tight md:text-5xl mb-6 mt-2"

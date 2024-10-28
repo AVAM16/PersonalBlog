@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { GitCard, LinkedInCard } from "../components/SocialCards";
 import { Separator } from "../components/ui/separator";
 const pageTitle = "Home";
+const description = "Personal website main page";
 function calculateAge(birthDate: string): number {
   const today = new Date();
   const birthDateObj = new Date(birthDate);
@@ -26,7 +27,7 @@ const age = calculateAge("2003-06-16");
   type="text/css"
   href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
 />
-<MainLayout pageTitle={pageTitle}>
+<MainLayout pageTitle={pageTitle} description={description}>
   <main>
     <h1
       class="text-center scroll-m-20 text-4xl tracking-tight sm:text-5xl mb-10 mt-1"

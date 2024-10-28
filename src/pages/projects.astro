@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import ProjectList from "../components/ProjectList";
 const pageTitle = "My Projects";
+const description = "A list of projects I have been working on";
 ---
 
 <link
@@ -10,7 +11,7 @@ const pageTitle = "My Projects";
   type="text/css"
   href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
 />
-<MainLayout pageTitle={pageTitle}>
+<MainLayout pageTitle={pageTitle} description={description}>
   <h1
     class="text-center scroll-m-20 text-3xl tracking-tight sm:text-4xl mb-8 mt-1 mx-2"
   >
