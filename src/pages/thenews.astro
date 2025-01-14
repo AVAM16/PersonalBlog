@@ -2,7 +2,24 @@
 import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import NewsCard from "../components/NewsCard";
-const allNews = await Astro.glob("./news/*.md");
+interface Frontmatter {
+  title: string;
+  description: string;
+  pubDate: string;
+}
+
+interface News {
+  path: string;
+  frontmatter: Frontmatter;
+}
+
+const allNews: News[] = await Promise.all(
+  Object.entries(import.meta.glob("./news/*.md")).map(async ([path, resolver]) => {
+    const { frontmatter } = await resolver() as { frontmatter: Frontmatter };
+    return { path, frontmatter };
+  })
+);
+
 allNews.sort(
   (a, b) =>
     Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
@@ -24,7 +41,7 @@ const description = "The latest news about technology and my personal life";
       {
         allNews.map((news) => (
           <NewsCard
-            url={news.url ?? "/404"}
+            url={news.path.replace(".md", "")}
             title={news.frontmatter.title}
             description={news.frontmatter.description}
             date={news.frontmatter.pubDate}
