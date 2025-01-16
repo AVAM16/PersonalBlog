@@ -41,7 +41,7 @@ const description = "The latest news about technology and my personal life";
       {
         allNews.map((news) => (
           <NewsCard
-            url={news.path.replace(".md", "")}
+            url={news.path.replace("/thenews", "").replace(".md", "")}
             title={news.frontmatter.title}
             description={news.frontmatter.description}
             date={news.frontmatter.pubDate}
