@@ -3,23 +3,31 @@ import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
 import { GitCard, LinkedInCard } from "../components/SocialCards";
 import { Separator } from "../components/ui/separator";
+
+import init, { calculate_age_rust } from "wasm_fns/pkg/wasm_fns";
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+
 const pageTitle = "Home";
 const description = "Personal website main page";
-function calculateAge(birthDate: string): number {
-  const today = new Date();
-  const birthDateObj = new Date(birthDate);
-  let age = today.getFullYear() - birthDateObj.getFullYear();
-  const monthDiff = today.getMonth() - birthDateObj.getMonth();
-  if (
-    monthDiff < 0 ||
-    (monthDiff === 0 && today.getDate() < birthDateObj.getDate())
-  ) {
-    age--;
-  }
-  return age;
-}
 
-const age = calculateAge("2003-06-16");
+const birthDateString = "2003-06-16";
+const birthDateObj = new Date(birthDateString);
+const today = new Date();
+
+const wasmPath = path.resolve(process.cwd(), "wasm_fns/pkg/wasm_fns_bg.wasm");
+const wasmBuffer = await readFile(wasmPath);
+
+await init({ module_or_path: wasmBuffer });
+const age = calculate_age_rust(
+  birthDateObj.getFullYear(),
+  birthDateObj.getMonth() + 1,
+  birthDateObj.getDate(),
+  today.getFullYear(),
+  today.getMonth() + 1,
+  today.getDate()
+);
+  
 ---
 
 <link
