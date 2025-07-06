@@ -6,7 +6,7 @@ import { Separator } from "../components/ui/separator";
 
 import init, { calculate_age_rust } from "wasm_fns/pkg/wasm_fns";
 import { readFile } from 'node:fs/promises';
-import path from 'node:path';
+import * as path from 'node:path';
 
 const pageTitle = "Home";
 const description = "Personal website main page";
