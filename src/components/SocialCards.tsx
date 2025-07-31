@@ -1,4 +1,4 @@
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card.tsx";
 import { Linkedin } from "lucide-react";
 import { useEffect, useRef } from "react";
 

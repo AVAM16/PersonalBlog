@@ -3,9 +3,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./ui/accordion";
-import { Separator } from "./ui/separator";
-import { Button } from "./ui/button";
+} from "./ui/accordion.tsx";
+import { Separator } from "./ui/separator.tsx";
+import { Button } from "./ui/button.tsx";
 
 export default function ProjectList() {
   return (

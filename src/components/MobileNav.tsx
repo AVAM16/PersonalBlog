@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Button } from "./ui/button.tsx";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet.tsx";
 import { Menu as MIcon } from "lucide-react";
 
 interface NavProps {
