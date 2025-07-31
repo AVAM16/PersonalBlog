@@ -8,6 +8,9 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"]
   }
 }
