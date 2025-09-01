@@ -5,8 +5,8 @@ import { GitCard, LinkedInCard } from "../components/SocialCards";
 import { Separator } from "../components/ui/separator";
 
 import init, { calculate_age_rust } from "wasm_fns/pkg/wasm_fns";
-import { readFile } from 'node:fs/promises';
-import * as path from 'node:path';
+import { readFile } from "node:fs/promises";
+import * as path from "node:path";
 
 const pageTitle = "Home";
 const description = "Personal website main page";
@@ -25,9 +25,8 @@ const age = calculate_age_rust(
   birthDateObj.getDate(),
   today.getFullYear(),
   today.getMonth() + 1,
-  today.getDate()
+  today.getDate(),
 );
-  
 ---
 
 <link
@@ -42,7 +41,7 @@ const age = calculate_age_rust(
     >
       Welcome to my website
     </h1>
-    <p class="text-lg px-5">
+    <p class="text-lg px-5 md:px-10">
       My name is <span class="text-purple-500">Artur Martins</span> and I have just
       finished my Degree in Computer Science and Engineering at
       <a
@@ -54,7 +53,7 @@ const age = calculate_age_rust(
       not consider myself a front-end developer, I realized the importance of
       having a personal website and took my holidays to build this one.
     </p>
-    <p class="text-lg p-5">
+    <p class="text-lg px-5 md:px-10 pt-5">
       My curriculum will mostly be on LinkedIn and my projects on GitHub. The
       main goal of this website is to publish some news about the world of
       technology and my personal life. Hope to expand this website in the
@@ -65,12 +64,15 @@ const age = calculate_age_rust(
     >
       A little bit about me
     </h2>
-    <p class="text-lg p-5">
+    <p class="text-lg py-5 px-5 md:px-10">
       I am from Portugal and I am {age} years old. I am passionate about technology,
-      motorsports and love being active. I am a federated athelete in sports shooting.
-      My favourite sport is Rally and I watch WRC all the time. I also love riding
-      motorcycles. I am a big open-source advocate and Linux user. My favourite programming
-      language is undoubtedly C. My dad learned it at
+      motorsports and love being active. My favourite sport is Rally and I watch
+      WRC all the time. I also love riding motorcycles. I am a big open-source advocate
+      and Linux user. My main interests lie in cybersecurity and distributed systems,
+      which naturally led me to develop a strong fascination with blockchain technology.
+      I primarily use Linux and am a passionate advocate for open-source
+      software. My favourite programming language is undoubtedly C. My dad learned
+      it at
       <a
         href="https://tecnico.ulisboa.pt/en/"
         target="_blank"
@@ -79,13 +81,12 @@ const age = calculate_age_rust(
       >
       and so did I. I also like C++ and Python. At this moment I am learning Rust
       and I find it quite interesting. I have a C2 level in English. I mostly listen
-      to classical music and my favourite composer is Bach. My favourite music is
+      to classical music and my favourite composer is Bach. My favourite song is
       <a
         href="https://www.youtube.com/watch?v=QPba-i26YNA"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-blue-400"
-        >Violin Concerto in A Minor RV356</a
+        class="text-blue-400">Violin Concerto in A Minor RV356</a
       > from Vivaldi.
     </p>
     <h2
