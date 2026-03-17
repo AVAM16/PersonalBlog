@@ -1,10 +1,10 @@
 ---
 import "@/styles/globals.css";
 import MainLayout from "../layouts/MainLayout.astro";
-import { GitCard, LinkedInCard } from "../components/SocialCards";
-import { Separator } from "../components/ui/separator";
+import { GitCard, LinkedInCard } from "../components/SocialCards.jsx";
+import { Separator } from "../components/ui/separator.jsx";
 
-import init, { calculate_age_rust } from "wasm_fns/pkg/wasm_fns";
+import init, { calculate_age_rust } from "wasm_fns/pkg/wasm_fns.js";
 import { readFile } from "node:fs/promises";
 import * as path from "node:path";
 

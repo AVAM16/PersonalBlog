@@ -4,13 +4,8 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["node"]
+    "paths": { "@/*": ["./src/*"] },
+    "types": ["node", "react", "react-dom"],
+    "typeRoots": ["./node_modules/@types"]
   }
 }

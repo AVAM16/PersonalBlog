@@ -1,0 +1,127 @@
+
+> personalblog@0.0.1 build
+> astro check && astro build
+
+10:55:38 [types] Generated 34ms
+10:55:38 [check] Getting diagnostics for Astro files in /home/avam/Desktop/PersonalBlog...
+[96msrc/components/SocialCards.tsx[0m:[93m67[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'Linkedin' is deprecated.
+
+[7m67[0m           <Linkedin size={48} />
+[7m  [0m [93m           ~~~~~~~~[0m
+[96msrc/components/SocialCards.tsx[0m:[93m2[0m:[93m10[0m - [93mwarning[0m[90m ts(6385): [0m'Linkedin' is deprecated.
+
+[7m2[0m import { Linkedin } from "lucide-react";
+[7m [0m [93m         ~~~~~~~~[0m
+
+[96msrc/components/ui/accordion.tsx[0m:[93m42[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m42[0m   React.ElementRef<typeof AccordionPrimitive.Content>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/accordion.tsx[0m:[93m22[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m22[0m   React.ElementRef<typeof AccordionPrimitive.Trigger>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/accordion.tsx[0m:[93m10[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m10[0m   React.ElementRef<typeof AccordionPrimitive.Item>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m158[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m158[0m   React.ElementRef<typeof DropdownMenuPrimitive.Separator>,
+[7m   [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m140[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m140[0m   React.ElementRef<typeof DropdownMenuPrimitive.Label>,
+[7m   [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m118[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m118[0m   React.ElementRef<typeof DropdownMenuPrimitive.RadioItem>,
+[7m   [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m94[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m94[0m   React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m76[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m76[0m   React.ElementRef<typeof DropdownMenuPrimitive.Item>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m58[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m58[0m   React.ElementRef<typeof DropdownMenuPrimitive.Content>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m42[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m42[0m   React.ElementRef<typeof DropdownMenuPrimitive.SubContent>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/dropdown-menu.tsx[0m:[93m20[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m20[0m   React.ElementRef<typeof DropdownMenuPrimitive.SubTrigger>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+
+[96msrc/components/ui/hover-card.tsx[0m:[93m11[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m11[0m   React.ElementRef<typeof HoverCardPrimitive.Content>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+
+[96msrc/components/ui/separator.tsx[0m:[93m7[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m7[0m   React.ElementRef<typeof SeparatorPrimitive.Root>,
+[7m [0m [93m        ~~~~~~~~~~[0m
+
+[96msrc/components/ui/sheet.tsx[0m:[93m116[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m116[0m   React.ElementRef<typeof SheetPrimitive.Description>,
+[7m   [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/sheet.tsx[0m:[93m104[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m104[0m   React.ElementRef<typeof SheetPrimitive.Title>,
+[7m   [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/sheet.tsx[0m:[93m55[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m55[0m   React.ElementRef<typeof SheetPrimitive.Content>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+[96msrc/components/ui/sheet.tsx[0m:[93m17[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'ElementRef' is deprecated.
+
+[7m17[0m   React.ElementRef<typeof SheetPrimitive.Overlay>,
+[7m  [0m [93m        ~~~~~~~~~~[0m
+
+[96mwasm_fns/pkg/wasm_fns.js[0m:[93m65[0m:[93m37[0m - [93mwarning[0m[90m ts(6133): [0m'memory' is declared but its value is never read.
+
+[7m65[0m function __wbg_init_memory(imports, memory) {
+[7m  [0m [93m                                    ~~~~~~[0m
+[96mwasm_fns/pkg/wasm_fns.js[0m:[93m65[0m:[93m28[0m - [93mwarning[0m[90m ts(6133): [0m'imports' is declared but its value is never read.
+
+[7m65[0m function __wbg_init_memory(imports, memory) {
+[7m  [0m [93m                           ~~~~~~~[0m
+
+Result (31 files): 
+- 0 errors
+- 0 warnings
+- 21 hints
+
+10:55:41 [types] Generated 22ms
+10:55:41 [build] output: "static"
+10:55:41 [build] mode: "static"
+10:55:41 [build] directory: /home/avam/Desktop/PersonalBlog/dist/
+10:55:41 [build] Collecting build info...
+10:55:41 [build] ✓ Completed in 42ms.
+10:55:41 [build] Building static entrypoints...
+10:55:42 [vite] ✓ built in 822ms
+10:55:43 [vite] ✓ built in 1.18s
+10:55:43 [build] Rearranging server assets...
+
+ generating static routes 
+10:55:43   ├─ /experience/index.html (+132ms) 
+10:55:43   ├─ /news/ErasmusJanuary/index.html (+5ms) 
+10:55:43   ├─ /news/ErasmusSeptember/index.html (+3ms) 
+10:55:43   ├─ /news/firstpost/index.html (+3ms) 
+10:55:43   ├─ /news/postspecialize/index.html (+3ms) 
+10:55:43   ├─ /projects/index.html (+11ms) 
+10:55:43   ├─ /thenews/index.html (+5ms) 
+10:55:43   ├─ /index.html (+5ms) 
+10:55:43 ✓ Completed in 185ms.
+
+10:55:43 [build] ✓ Completed in 2.23s.
+10:55:43 [build] 8 page(s) built in 2.27s
+10:55:43 [build] Complete!
